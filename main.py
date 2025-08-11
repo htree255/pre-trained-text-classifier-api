@@ -17,12 +17,12 @@ app = FastAPI(title="Sentiment Analysis API", description="API for classifying t
 
 #Define the input data model
 class CallInput(BaseModel):
-    Text:str
+    text:str
 
 #Define the API endpoint
 @app.post("/classify")
 async def classify_text_api(item:CallInput):
-    results = classifier(item.Text)
+    results = classifier(item.text)
     return {"prediction": results[0]}
 
 #Health check

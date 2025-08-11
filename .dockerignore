@@ -1,0 +1,30 @@
+# Ignore the virtual environment directory
+venv/
+.venv/
+
+# Ignore Git-related files
+.git/
+.gitignore
+
+# Ignore Python cache directories and files
+__pycache__/
+*.pyc
+*.pyo
+*.pth
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore any local data or log files
+*.log
+*.db
+
+# Ignore any build artifacts
+dist/
+build/
+
+# Hugging Face cache (models, tokenizer files, etc.)
+# The model will be downloaded inside the container
+# This path is usually ~/.cache/huggingface/hub on Linux
+.cache/
